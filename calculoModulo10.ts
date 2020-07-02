@@ -1,4 +1,6 @@
 const calculoModulo10 = (body: string, reverse: boolean = true): string => {
+  if (!body || !body.length) throw 'Tamanho insuficiente para cálculo do digito verificador.';
+
   let numberSequence: string = '',
     sum = 0;
 
